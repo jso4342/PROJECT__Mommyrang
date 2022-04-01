@@ -149,7 +149,7 @@
 								<div class="userName ">
 									<!-- 게시글 제목 -->
 									<h4 style="margin-bottom: 0;"><a href="${pageContext.request.contextPath}/service/LookMomProfileOk.ser?userNum=${job.getUserNum()}&profile=${job.getProfileNum()}" style="border:none;">
-									${fn:substring(job.getProfileDescription(),0,15)}</a></h4>
+									${fn:substring(job.getProfileDescription(),0,18)}</a></h4>
 									<div class="mobileAd ">
 										<!-- 주소 -->
 										<span class="span medi6">${job.getLocationSido()}  ${job.getLocationSigun()} </span>&nbsp;

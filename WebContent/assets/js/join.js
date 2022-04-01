@@ -188,10 +188,10 @@ var form = document.joinForm;
          return;
       }
 //      
-//      if(!phoneCheck){
-//          alert("휴대폰 인증을 다시 시도해주세요.");
-//          return;
-//       }
+      if(!phoneCheck){
+          alert("휴대폰 인증을 다시 시도해주세요.");
+          return;
+       }
       
       if(!joinForm.userPw.value){
          alert("패스워드를 확인해주세요.");

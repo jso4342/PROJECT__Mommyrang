@@ -50,10 +50,12 @@ public class CommunityUpdateOk implements Action{
 		files = fDao.select(communityNum);
 		
 		//하나의 서비스를 구현하기 위한 DML의 집합 : 트랜잭션
+		System.out.println("1"+multi.getFilesystemName("communityPic"));
+		System.out.println("2"+community.getFileName());
 		//************************
 		cDao.update(community);
-		fDao.delete(communityNum);
-		fDao.insert(multi, communityNum);
+		//fDao.delete(communityNum);
+		fDao.update(multi, communityNum);
 		//************************
 		
 		//redirect일 경우 데이터를 전달할 수 있는 방법

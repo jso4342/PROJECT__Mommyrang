@@ -67,11 +67,11 @@
 			    			"checkUniversity":$('.checkUniversity').val(),
 			    			"profileNum": profileNum},
 		            success:function(e){
-		            	alert('수정하였습니다');
+		            	alert('인증이 완료되었습니다');
 		            	  location.reload();
 		            },
 		            error:function(){
-		            	alert('수정하였습니다');
+		            	alert('인증이 완료되었습니다');
 		            	  location.reload();
 		            }
 		            

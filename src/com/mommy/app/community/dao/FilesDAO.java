@@ -55,6 +55,50 @@ public class FilesDAO {
 		//}
 	}
 	
+	
+	
+	
+	//첨부파일 수정
+		public void update(MultipartRequest multi, int communityNum) {
+			FilesVO file = new FilesVO();
+			//CommunityDTO dto = new CommunityDTO()
+			Enumeration<String> files = multi.getFileNames();
+			CommunityVO community = new CommunityVO();
+			
+			//type="file"인 태그의 개수만큼 반복
+			//while(files.hasMoreElements()) {
+				//사용자가 업로드한 파일 태그의 name값
+				String name = files.nextElement();
+				
+				if (name == null) {
+					return ;
+				}else {
+					//사용자가 업로드한 원본 파일 이름
+					String fileNameOriginal = multi.getOriginalFileName(name);
+					
+					
+					
+					//중복 시 변경된 이름
+					String fileName = multi.getFilesystemName(name);
+					
+					//첨부파일이 업로드되지 않았다면
+					if(fileName == null) {;}
+					else {
+
+					file.setFileName(fileName);
+					file.setCommunityNum(communityNum);
+					
+					insert(file);
+					}
+				}
+				
+			//}
+		}
+	
+	
+	
+	
+	
 	//첨부파일 삭제
 	public void delete(int communityNum) {
 		sqlSession.delete("Files.delete", communityNum);

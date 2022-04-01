@@ -94,7 +94,7 @@
 					
 						<div class="profile">
 						
-                    <label><input type="file" name ="profilePicture"style="display:none;">
+                    <label><input type="file" name ="profilePicture"style="display:none;" value = "/communityData/${fileName}">
                     
                      <c:choose>
                     	<c:when test="${empty fileName}">

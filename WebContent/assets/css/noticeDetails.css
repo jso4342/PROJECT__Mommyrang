@@ -1,6 +1,9 @@
 
 /* ----------------------------------------------------------------------  */		
        @media (max-width: 576px){
+       		div#noInner{
+       			margin-left: 0px !important;
+       		}
        		
        		h2.notice {
    				 font-size: 30px !important;

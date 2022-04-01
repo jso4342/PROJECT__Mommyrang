@@ -73,7 +73,7 @@
                           <h3 style="margin-bottom: 3px; font-size: 18px;">${userVO.getUserName()}</h3><span style = "margin-top: 20px; font-size:16px;">${userAge}세,                                    
 	                           <c:choose>
 	                                    	<c:when test="${user.getUserGender() == 1}">남</c:when>
-	                                    	<c:when test="${user.getUserGender() == 0}">여</c:when>
+	                                    	<c:when test="${user.getUserGender() == 2}">여</c:when>
 	                                    	<c:otherwise>정보없음</c:otherwise>
 	                           </c:choose> 
                            </span>
@@ -172,7 +172,7 @@
 
                 <hr style = "margin: 0px; width: 95%; padding: 10px 0;" >
                 <div class = "innerContent" style = "position:relative;">
-                    <p class ="innerTitle">활동 가능 지역</p>             
+                    <p class ="innerTitle">선호하는 활동 지역</p>             
                     <div class="content3" style="padding-bottom: 10px;">
                         <div>
                             <select id="sido" class="address">

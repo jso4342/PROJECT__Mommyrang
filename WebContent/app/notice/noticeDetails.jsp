@@ -51,14 +51,15 @@
                         
 						</tr>
 					</table>
-                 
-                        <textarea name="" id="" cols="30" rows="10" class = "innerText" readonly>                
+                 <div id ="noInner" style = "margin-left: 35px;">
+                        <span name="" id="" cols="30" rows="10" class = "innerText" readonly>                
 ${noticeDetail.getNoticeContent()}
-                    </textarea>
-                    
-                    
-                    
-
+                    </span>
+                    </div>
+                   <table style = "margin-top: 55px;">
+                            <tr class = "next">
+                             <td class = "titleBelow"></td></tr>
+					</table>
                     <!-- 다음. 이전 글 목록-->
 <!--                     <div>
                         <table style = "margin-top: 55px;">

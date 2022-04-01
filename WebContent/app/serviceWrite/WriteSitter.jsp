@@ -65,7 +65,7 @@
                           <h3 style="margin-bottom: 3px; font-size: 18px;">${userVO.getUserName()}</h3><span style = "margin-top: 20px; font-size:16px;">${userAge}세,                                    
 	                           <c:choose>
 	                                    	<c:when test="${userVO.getUserGender() == 1}">남</c:when>
-	                                    	<c:when test="${userVO.getUserGender() == 0}">여</c:when>
+	                                    	<c:when test="${userVO.getUserGender() == 2}">여</c:when>
 	                                    	<c:otherwise>정보없음</c:otherwise>
 	                           </c:choose> 
                            </span>
@@ -77,7 +77,7 @@
                 
                 <hr class = "split">
                     <div class = "innerContent">
-                        <p class ="innerTitle">선호하는 돌봄유형</p>
+                        <p class ="innerTitle">활동 가능한 돌봄유형</p>
                         <div>
                             <div style = "float:left; margin-right:30px;">
                                 <input type="checkbox" id="inside" name="inside">
@@ -108,7 +108,7 @@
 
                     <hr style = "margin: 0px; width: 95%; padding: 10px 0;" >
                         <div class = "innerContent">
-                            <p class ="innerTitle">아이 정보</p>
+                            <p class ="innerTitle">선호하는 아이 정보</p>
                             <div>
                                 <div style = "float:left; margin-right:30px;">
                                     <input type="checkbox" id="newborn" name="newborn">
@@ -132,7 +132,7 @@
                      
             <hr style = "margin: 0px; width: 95%; padding: 10px 0;" >
                         <div class = "innerContent" style = "position:relative;">
-                            <p class ="innerTitle">원하는 돌봄 기간</p>
+                            <p class ="innerTitle">활동 가능한 돌봄 기간</p>
                             <div class = "innerModify" id="period">수정</div> <!-- 모달 창으로 이동 -->
                             <div class="content3">
                                 <!-- ajax 로 선택한 것 여기에 출력 -->

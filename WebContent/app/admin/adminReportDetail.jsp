@@ -79,7 +79,7 @@
                         <tr style = "border-top: 1.1px solid #000; border-bottom: 2px solid #000;">
                             <td class = "bold reTitle">답변</td>
                             <td colspan = "3">
-<textarea name="answer" id="" cols="30" rows="6" class = "innerText" style="background-color: white;">${admin.getAskTitle()}</textarea>
+<textarea name="answer" id="" cols="30" rows="6" class = "innerText" style="background-color: white;">${admin.getAskAnswer()}</textarea>
                             </td>
                         </tr>
                     </table>
