@@ -1,6 +1,5 @@
 create database mommy;
-use mommy;
-
+use mommy;   /*ë°ì´í„°ë² ì´ìŠ¤ */
 
 create table tbl_user(
    userNum int unsigned auto_increment primary key,
@@ -16,9 +15,6 @@ create table tbl_user(
    userBirthYear int unsigned,
    userGender tinyint unsigned
 );
-
-
-
 
 create table tbl_community(
    communityNum int unsigned auto_increment primary key,
@@ -44,9 +40,6 @@ create table tbl_communityComment(
    constraint fk_comment_userNum foreign key(userNum) references tbl_user(userNum)
 );
 
-
-
-
 create table tbl_ask_category(
    categoryNum int unsigned auto_increment primary key,
    categoryName varchar(1000)
@@ -55,15 +48,11 @@ create table tbl_ask_category(
 
 INSERT INTO mommy.tbl_ask_category
 (categoryName)
-VALUES('¹®ÀÇ');
+VALUES('ë¬¸ì˜');
 
 INSERT INTO mommy.tbl_ask_category
 (categoryName)
-VALUES('½Å°í');
-
-
-
-
+VALUES('ì‹ ê³ ');
 
 create table tbl_ask(
    askNum int unsigned auto_increment primary key,
@@ -162,7 +151,7 @@ create table tbl_favorite(
 create table tbl_chat(
    chatNum int unsigned auto_increment primary key,
    userNum int unsigned,
-   sendUserName int unsigned, /*³ª¿¡°Ô ¿äÃ»ÇÑ »ç¶÷ÀÇ À¯Àú³Ñ*/
+   sendUserName int unsigned, /*ë‚˜ì—ê²Œ ìš”ì²­í•œ ì‚¬ëŒì˜ ìœ ì €ë„˜*/
    chatTitle varchar(400),
    chatContent varchar(400),
    chatStatus tinyint,
