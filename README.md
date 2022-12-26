@@ -136,7 +136,7 @@
 
 **프로젝트 이후 공부한 내용** 
 
-채팅 구현을 못했던 것이 아쉬움에 많이 남아, [채팅 앱](https://github.com/jso4342/STUDY__Chatting-APP-)을 만들었습니다.
+채팅 구현을 못했던 것이 아쉬움에 많이 남아, [채팅 앱](https://github.com/jso4342/STUDY__Chatting-APP)을 만들었습니다.
 
 </div>
 </details>
